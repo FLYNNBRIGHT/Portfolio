@@ -79,6 +79,10 @@ button:hover {
     box-shadow: 5px 5px 10px var(--bg-col-charcoal);
 }
 
+.hidden { 
+    display: none !important;
+} 
+
 
 /* ==== Aside section styles ==== */
 aside {
