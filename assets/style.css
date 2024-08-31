@@ -1,0 +1,326 @@
+/* ==== Fonts Management ==== */
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ==== Root Variables ==== */
+:root { 
+    --bg-col-raisin-black: #05040A;
+    --bg-col-gunmetal: #2B303B;
+    --bg-col-charcoal: #3A3F4D;
+    --text-col-alice-blue: #DEE1E7;
+    --text-col-cadet-gray: #91989E;
+}
+
+/* ==== CSS Reset ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    outline: none;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-col-alice-blue);
+}
+
+section {
+    display: block;
+    padding-left: 270px;
+    z-index: 0;
+    opacity: 1;
+    min-height: 100vh;
+    background: var(--bg-col-raisin-black);
+    font-family: 'Poppins' sans-serif;
+}
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.padding-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button {
+    padding: 8px 20px;
+    color: var(--text-col-alice-blue);
+    font-size: 16px;
+    background-color: var(--accent-color-1);
+    border-radius: 25px;
+    font-weight: 400;
+    border: transparent;
+    font-family: 'Poppins', sans-serif;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px var(--bg-col-charcoal);
+}
+
+
+/* ==== Aside section styles ==== */
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 270px;
+    top: 0;
+    left: 0;
+    background: var(--bg-col-gunmetal);
+    z-index: 10;
+    border-right: 1px solid var(--text-col-cadet-gray);
+}
+
+/* ==== Logo Styles ==== */
+aside .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+aside .logo a {
+    color: var(--text-col-alice-blue);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px 20px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+aside .logo a span {
+    font-size: 40px;
+    font-family: 'Clicker Script', cursive;
+}
+
+aside .logo a::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-top: 5px solid var(--accent-color-1);
+    border-left: 5px solid var(--accent-color-1);
+    top: 0;
+    left: 0;
+}
+
+aside .logo a::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-bottom: 5px solid var(--accent-color-1);
+    border-right: 5px solid var(--accent-color-1);
+    bottom: 0;
+    right: 0;
+}
+
+
+/* ==== Navigation Styles ==== */
+/* ==== Hamburger Menu Styles ==== */
+aside .hamburger {
+    position: fixed;
+    display: none;
+    left: 300px;
+    top: 20px;
+    cursor: pointer;
+}
+
+aside .hamburger i {
+    font-size: 30px;
+}
+
+/* ==== Navigation Menu Styles ==== */
+aside nav {
+    margin-top: 50px;
+}
+
+aside nav li {
+    margin-bottom: 20px;
+    display: block;
+    border-bottom: 1px solid var(--text-col-cadet-gray);
+    transition: all .5s ease;
+}
+
+aside nav li:hover {
+    transform: scale(1.1);
+}
+
+aside nav li a {
+    color: var(--text-col-alice-blue);
+    letter-spacing: 2px;
+}
+
+aside nav li a.active {
+    color: var(--accent-color-1);
+}
+
+
+aside nav li a i {
+    margin-right: 5px;
+    transition: all .5s;
+}
+
+aside nav li a i:hover {
+    transform: rotate3d(0, 0, 1, 360deg);
+}
+
+
+/* ==== Social Icons Styles ==== */
+aside .socials {
+    margin-top: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+aside .socials a {
+    color: var(--text-col-alice-blue);
+}
+
+aside .socials a i {
+    font-size: 1.5;
+    transition: all .5s;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+aside .socials a i:hover {
+    transform: rotate3d(0, 0, 1, 360deg);
+    background-color: var(--accent-color-1);
+}
+
+
+/* ==== Hero section styles ==== */
+/* ==== Hero User Information styles ==== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: inherit;
+    padding: 0 15px;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero .user-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 35px;
+}
+
+.hero .container .row .user-info .name {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero .user-info .name span {
+    font-size: 30px;
+    font-family: 'Clicker Script', cursive;
+    letter-spacing: 1px;
+    font-weight: 900;
+
+}
+
+.hero .container .row .user-info .title,
+span {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero .container .row .user-info .title span {
+    color: var(--accent-color-1);
+    letter-spacing: 3px;
+}
+
+.hero .container .row .user-info .details {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    line-height: 1.8;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+.hero .container .row .user-info button i {
+    margin-left: 10px;
+}
+
+/* ==== Hero User Image styles ==== */
+.hero .user-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.hero .user-img img {
+    height: 400px;
+    max-width: 320px;
+    margin: auto;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.hero .user-img img:hover {
+    transform: scale(1.05);
+}
+
+.user-img::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid var(--accent-color-1);
+    border-left: 10px solid var(--accent-color-1);
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.user-img::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border-bottom: 10px solid var(--accent-color-1);
+    border-right: 10px solid var(--accent-color-1);
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+}
