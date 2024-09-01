@@ -4,7 +4,7 @@
 
 
 /* ==== Root Variables ==== */
-:root { 
+:root {
     --bg-col-raisin-black: #05040A;
     --bg-col-gunmetal: #2B303B;
     --bg-col-charcoal: #3A3F4D;
@@ -38,6 +38,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-col-alice-blue);
+    scroll-behavior: smooth;
 }
 
 section {
@@ -47,7 +48,7 @@ section {
     opacity: 1;
     min-height: 100vh;
     background: var(--bg-col-raisin-black);
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -79,9 +80,13 @@ button:hover {
     box-shadow: 5px 5px 10px var(--bg-col-charcoal);
 }
 
-.hidden { 
+.hidden {
     display: none !important;
-} 
+}
+
+.active {
+    color: var(--accent-color-1);
+}
 
 
 /* ==== Aside section styles ==== */
@@ -181,11 +186,6 @@ aside nav li a {
     letter-spacing: 2px;
 }
 
-aside nav li a.active {
-    color: var(--accent-color-1);
-}
-
-
 aside nav li a i {
     margin-right: 5px;
     transition: all .5s;
@@ -258,7 +258,7 @@ aside .socials a i:hover {
     font-family: 'Clicker Script', cursive;
     letter-spacing: 1px;
     font-weight: 900;
-
+    color: var(--accent-color-1);
 }
 
 .hero .container .row .user-info .title,
@@ -327,4 +327,51 @@ span {
     position: absolute;
     bottom: -40px;
     right: 0;
+}
+
+
+/* ==== About section styles ==== */
+/* ==== About section Title styles ==== */
+.about .about-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-title .intro {
+    margin: 50px 0;
+    position: relative;
+    font-size: 40px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-title h2::before {
+    content: "";
+    height: 4px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: var(--accent-color-1);
+    position: absolute;
+    left: 15px;
+    top: 100%;
+}
+
+.about .about-title h2::after {
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: var(--accent-color-1);
+    position: absolute;
+    left: 15px;
+    top: 100%;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+/* ==== About section content styles ==== */
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px;
 }

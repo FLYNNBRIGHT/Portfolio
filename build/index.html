@@ -40,11 +40,11 @@
             </div>
             <nav class="navigation--section">
                 <ul>
-                    <li><a href="#" class="active"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
-                    <li><a href="#"><i class="fa-duotone fa-solid fa-user"></i> About</a></li>
-                    <li><a href="#"><i class="fa-solid fa-list-ul"></i> Services</a></li>
-                    <li><a href="#"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
-                    <li><a href="#"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
+                    <li><a href="#" class="home--butt active" onclick="activeHome ()"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                    <li><a href="#about" class="about--butt" onclick="activeAbout ()"><i class="fa-duotone fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#services" class="services--butt" onclick="activeServices ()"><i class="fa-solid fa-list-ul"></i> Services</a></li>
+                    <li><a href="#portfolio" class="portfolio--butt" onclick="activePortfolio ()"><i class="fa-solid fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#contact" class="contact--butt" onclick="activeContact ()"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
                 </ul>
             </nav>
             <!-- ==== Socials Links  ==== -->
@@ -57,7 +57,7 @@
         </aside>
 
         <!-- ==== Hero Section  ==== -->
-        <section class="hero hidden">
+        <section class="hero" id="home">
             <div class="container">
                 <div class="row">
                     <!-- ==== Hero User Information   ==== -->
@@ -78,10 +78,17 @@
         </section>
 
         <!-- ==== About Section  ==== -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="row">
-                    <h2 class="intro">About Me</h2>
+                    <div class="about-title">
+                        <h2 class="intro">About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis natus veritatis esse. Fugit recusandae ea commodi ex autem similique ipsa a exercitationem porro, corporis sit laudantium facere rerum rem temporibus.
+                    </div>
                 </div>
             </div>
         </section>
