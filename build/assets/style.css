@@ -23,6 +23,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ::before,
 ::after {
     margin: 0;
@@ -38,7 +42,6 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-col-alice-blue);
-    scroll-behavior: smooth;
 }
 
 section {
@@ -62,7 +65,7 @@ section {
     padding-right: 15px;
 }
 
-button {
+.buttons {
     padding: 8px 20px;
     color: var(--text-col-alice-blue);
     font-size: 16px;
@@ -75,9 +78,9 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.buttons:hover {
     transform: scale(1.05);
-    box-shadow: 5px 5px 10px var(--bg-col-charcoal);
+    box-shadow: 0 5px 10px var(--bg-col-charcoal);
 }
 
 .hidden {
@@ -179,6 +182,7 @@ aside nav li {
 
 aside nav li:hover {
     transform: scale(1.1);
+    box-shadow: 0 5px 10px var(--bg-col-charcoal);
 }
 
 aside nav li a {
@@ -233,7 +237,6 @@ aside .socials a i:hover {
     display: flex;
     flex-wrap: wrap;
     position: inherit;
-    padding: 0 15px;
 }
 
 .hero {
@@ -261,8 +264,14 @@ aside .socials a i:hover {
     color: var(--accent-color-1);
 }
 
-.hero .container .row .user-info .title,
-span {
+.hero .container .row .user-info .title {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero .container .row .user-info .title span {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0;
@@ -338,7 +347,7 @@ span {
 }
 
 .about .about-title .intro {
-    margin: 50px 0;
+    margin: 40px 0;
     position: relative;
     font-size: 40px;
     padding-left: 15px;
@@ -373,5 +382,244 @@ span {
 .about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
-    padding-left: 15px;
+}
+
+.about .about-content .about--content--text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-col-alice-blue);
+}
+
+.about .about-content .about--content--text h3 span {
+    color: var(--accent-color-1);
+    font-weight: 700;
+}
+
+.about .about-content .about--content--text p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* ==== About section User Details styles ==== */
+.about .about-content .user--details {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.about .about-content .user--details .user--info {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .user--details .user--info p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--text-col-cadet-gray);
+}
+
+.about .about-content .user--details .user--info span {
+    color: var(--text-col-cadet-gray);
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.about .about-content .user--details .button {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.about .about-content .user--details .btn {
+    margin-right: 25px;
+}
+
+/* ==== About section User Skills styles ==== */
+.about .about-content .user--skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.about .about-content .user--skills .skill--details {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.about .about-content .user--skills .skill--details h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-col-alice-blue);
+    line-height: 40px;
+    text-transform: capitalize;
+}
+
+.about .about-content .user--skills .skill--details .progress {
+    background-color: var(--text-col-cadet-gray);
+    height: 8px;
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+}
+
+.about .about-content .user--skills .skill--details .progress--bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--accent-color-1);
+}
+
+.about .about-content .user--skills .skill--details .progress--rate {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-col-cadet-gray);
+}
+
+/* ==== About section User Education and User Experience styles ==== */
+.about .about-content .user--education,
+.about .about-content .user--experience  {
+    margin: 60px 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about .about-content .user--education h3,
+.about .about-content .user--experience h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+/* ==== About section User Education styles ==== */
+
+.about .about-content .user--education .timeline {
+    background-color: var(--bg-col-gunmetal);
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 20px var(--bg-col-gunmetal);
+}
+
+.about .about-content .user--education .timeline--details {
+    margin-top: 30px;
+    position: relative;
+}
+
+.about .about-content .user--education .timeline--details::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border: 1px solid var(--accent-color-1);
+    top: 0;
+    left: 24px;
+}
+
+.about .about-content .user--education .timeline--content {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 50px;
+}
+
+.about .about-content .user--education .timeline--content .timeline--circle {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--accent-color-1);
+}
+
+.about .about-content .user--education .timeline--content .timeline--date i {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    color: var(--text-col-alice-blue);
+}
+
+.about .about-content .user--education .timeline--details .timeline--date {
+    color: var(--text-col-cadet-gray);
+}
+
+.about .about-content .user--education .timeline--details h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .user--education .timeline--details p {
+    font-size: 14px;
+    text-align: justify;
+    color: var(--text-col-cadet-gray);
+}
+
+
+/* ==== About section User Experience styles ==== */
+.about .about-content .user--experience .timeline {
+    background-color: var(--bg-col-gunmetal);
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 0 20px var(--bg-col-gunmetal);
+}
+
+.about .about-content .user--experience .timeline--details {
+    margin-top: 30px;
+    position: relative;
+}
+
+.about .about-content .user--experience .timeline--details::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border: 1px solid var(--accent-color-1);
+    top: 0;
+    left: 24px;
+}
+
+.about .about-content .user--experience .timeline--content {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 50px;
+}
+
+.about .about-content .user--experience .timeline--content .timeline--circle {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--accent-color-1);
+}
+
+.about .about-content .user--experience .timeline--content .timeline--date i {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    color: var(--text-col-alice-blue);
+}
+
+.about .about-content .user--experience .timeline--details .timeline--date {
+    color: var(--text-col-cadet-gray);
+}
+
+.about .about-content .user--experience .timeline--details h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .user--experience .timeline--details p {
+    font-size: 14px;
+    text-align: justify;
+    color: var(--text-col-cadet-gray);
 }
