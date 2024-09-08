@@ -72,6 +72,11 @@ section {
     padding-right: 15px;
 }
 
+.padding-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .buttons {
     padding: 8px 20px;
     color: var(--text-col-alice-blue);
@@ -280,6 +285,16 @@ aside .socials a i {
 aside .socials a i:hover {
     transform: rotate3d(0, 0, 1, 360deg);
     background-color: var(--accent-color-1);
+}
+
+aside .copyright {
+    position: absolute;
+    bottom: 2px;
+}
+
+aside .copyright p {
+    font-size: 10px;
+    color: var(--bg-col-raisin-black);
 }
 
 
@@ -746,6 +761,7 @@ aside .socials a i:hover {
     align-items: center;
     margin-bottom: 30px;
 }
+
 .portfolio--subheading h3 {
     font-weight: 500;
     color: var(--text-col-cadet-gray);
@@ -814,4 +830,89 @@ aside .socials a i:hover {
 .portfolio--cards--items:hover .portfolio--img--alt {
     transform: scale(1.02);
     color: var(--text-col-alice-blue);
+}
+
+
+/* ==== Contact section styles ==== */
+.contacts--subheading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--accent-color-1);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.contact--links {
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact--links i {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: var(--accent-color-1);
+    transition: all .5s ease-in-out;
+}
+
+.contact--links:hover i {
+    transform: rotate3d(0, 0, 1, 360deg);
+}
+
+.contact--links h4 {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact--links a {
+    text-decoration: none;
+    color: var(--text-col-cadet-gray);
+    transition: all .5s ease-in-out;
+}
+
+.contact--links:hover a {
+    color: var(--text-col-alice-blue);
+}
+
+.contact--form {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+
+.contact--form .form--group {
+    margin-bottom: 30px;
+}
+
+.contact--form .col-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact--form .col-24 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact--form .form--input .form--control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-col-alice-blue);
+    border: 1px solid var(--text-col-cadet-gray);
+    background-color: var(--bg-col-charcoal);
+    transition: all .5s ease;
+}
+
+.contact--form .form--input .form--control:focus {
+    box-shadow: 0 0 10px var(--accent-color-1);
+}
+
+.contact--form .form--input textarea.form--control {
+    height: 150px;
 }
