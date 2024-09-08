@@ -671,6 +671,7 @@ aside .socials a i:hover {
     text-align: center;
     border-radius: 10px;
     transition: all .5s ease;
+    cursor: pointer;
 }
 
 .services--box .services--box--contents:hover {
@@ -732,5 +733,85 @@ aside .socials a i:hover {
     background-color: var(--accent-color-1);
     border: transparent;
     box-shadow: 0 5px 10px var(--bg-col-charcoal);
+    color: var(--text-col-alice-blue);
+}
+
+
+/* ==== Portfolio section styles ==== */
+.portfolio--subheading {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.portfolio--subheading h3 {
+    font-weight: 500;
+    color: var(--text-col-cadet-gray);
+    font-size: 20px;
+}
+
+#portfolio--cards--row {
+    padding: 15px !important;
+    margin: 0 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--bg-col-charcoal);
+    background-color: var(--bg-col-gunmetal);
+}
+
+.portfolio--cards {
+    flex: 33.33%;
+    max-width: 31.33%;
+    margin-bottom: 20px;
+}
+
+.portfolio--category h4 {
+    margin-bottom: 10px;
+    color: var(--accent-color-1);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.portfolio--cards--items {
+    background-color: var(--bg-col-gunmetal);
+    border: 1px solid var(--bg-col-charcoal);
+    text-align: center;
+    border-radius: 8px;
+    transition: all .5s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.portfolio--cards--items:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--text-col-cadet-gray);
+}
+
+.portfolio--cards--items:hover .portfolio--cards--img {
+    transform: scale(1.05);
+}
+
+.portfolio--cards--items .portfolio--cards--img {
+    height: 180px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all .5s ease;
+    margin-bottom: 10px;
+}
+
+.portfolio--cards--items .portfolio--img--alt {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: var(--text-col-cadet-gray);
+    transition: all .5s ease;
+}
+
+.portfolio--cards--items:hover .portfolio--img--alt {
+    transform: scale(1.02);
     color: var(--text-col-alice-blue);
 }

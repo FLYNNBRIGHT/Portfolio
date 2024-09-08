@@ -1,3 +1,4 @@
+// ==== Script for Navigation Color Transitions ==== //
 const homeButton = document.querySelector('.home--butt');
 const aboutButton = document.querySelector('.about--butt');
 const servicesButton = document.querySelector('.services--butt');
@@ -39,4 +40,27 @@ let activeContact = () => {
     servicesButton.classList.remove('active');
     portfolioButton.classList.remove('active');
     contactButton.classList.add('active');
+}
+
+
+// ==== Script for Portfolio Category Display ==== //
+const amazonKdpCategory = document.querySelector('.amazon--kdp--button');
+const cryptoTradingCategory = document.querySelector('.crypto--trading--button');
+const writingCategory = document.querySelector('.writing--button');
+
+
+let activeAmazonKdp = () => {
+    amazonKdpCategory.classList.remove('hidden');
+    cryptoTradingCategory.classList.add('hidden');
+    writingCategory.classList.add('hidden');
+}
+let activeCryptoTrading = () => {
+    amazonKdpCategory.classList.add('hidden');
+    cryptoTradingCategory.classList.remove('hidden');
+    writingCategory.classList.add('hidden');
+}
+let activeWriting = () => {
+    amazonKdpCategory.classList.add('hidden');
+    cryptoTradingCategory.classList.add('hidden');
+    writingCategory.classList.remove('hidden');
 }
