@@ -87,3 +87,17 @@
         margin-bottom: 0;
     }
 }
+
+@media (max-width: 380px) {
+    .about-content .user--details .user--info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-content .user--details .buttons {
+        font-size: 12px;
+    }
+    
+    .about-content .user--details .btn {
+        margin-right: 10px;
+    }
+}
