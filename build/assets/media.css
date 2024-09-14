@@ -1,0 +1,89 @@
+@media (max-width: 1199px) {
+    aside {
+        left: -270px;
+    }
+
+    section {
+        padding-left: 0;
+    }
+
+    /* ==== About section User Details styles ==== */
+    .about-content .user--details .user--info span {
+        display: block;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero .user-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .hero .user-img {
+        display: none;
+    }
+
+    /* ==== Services, Portfolio contacts cards styles ==== */
+    .services--box,
+    .contact--links {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .portfolio--cards {
+        flex: 50%;
+        max-width: 49%;
+    }
+
+    /* ==== Portfolio Subheading styles ==== */
+    .portfolio--subheading {
+        gap: 10px;
+    }
+
+    .portfolio--subheading h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-content .user--details,
+    .about-content .user--skills,
+    .about-content .user--education,
+    .about-content .user--experience {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-content .user--skills {
+        margin-top: 20px;
+    }
+
+    .about-content .user--skills .skill--details {
+        padding: 0;
+    }
+
+    .portfolio--subheading {
+        display: block;
+    }
+    .portfolio--subheading h3 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 639px) {
+    .services--box,
+    .portfolio--cards,
+    .contact--form .col-12,
+    .contact--links {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .portfolio--subheading .buttons {
+        display: none;
+    }
+    .portfolio--subheading h3 {
+        margin-bottom: 0;
+    }
+}

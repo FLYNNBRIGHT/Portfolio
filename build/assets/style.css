@@ -439,7 +439,7 @@ aside .copyright p {
 }
 
 .about-content .user--details .user--info p {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     padding: 10px 0;
@@ -447,6 +447,7 @@ aside .copyright p {
 }
 
 .about-content .user--details .user--info span {
+    font-size: 14px;
     color: var(--text-col-cadet-gray);
     margin-left: 10px;
     font-weight: 400;
@@ -475,7 +476,7 @@ aside .copyright p {
 }
 
 .about-content .user--skills .skill--details h5 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--text-col-alice-blue);
     line-height: 40px;
@@ -916,3 +917,4 @@ aside .copyright p {
 .contact--form .form--input textarea.form--control {
     height: 150px;
 }
+
